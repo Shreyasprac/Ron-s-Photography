@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RON's Photography</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./navbar.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+       $(function(){
+    $("#S_nav").load("./navbar.html", function(response, status, xhr) {
+        if (status == "error") {
+            console.error("Error loading navbar.html: " + xhr.status + " " + xhr.statusText);
+        }
+    });
+
+    $('#carousel1').load("./carousel.html", function(response, status, xhr) {
+        if (status == "error") {
+            console.error("Error loading carousel.html: " + xhr.status + " " + xhr.statusText);
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    
+    <section id="header">
+        <div id="S_nav"> </div>
+    </section>
+    
+    <section id="Carousel">
+        <div id="carousel1"></div>
+    </section>
+
+    <div id="index_page_space_1">     
+    </div>
+    <div style="padding: 0 15px 0 15px;">
+     <hr>
+    </div>
+    <section id="footer">
+        <div id="ext_footer">
+ <!-- Stories Section -->
+          <div id="stories">
+            <h1>Stories</h3>
+            <iframe id="iframe_stories" src="./iframe.html" frameborder="0"></iframe>
+          </div>
+  <!-- Stories Section -->
+     <button id="scrollUpBtn" title="Go to top">↑</button>
+          <div style="padding: 0 15px 0 15px;"><hr></div>
+    <!-- Pricing Section -->
+          <div id="pricing">
+            <h1>Pricing</h1>
+            <div class="pricing-table">
+    
+                <div style="padding: 20px;">
+                <table>
+                    <th>Basic</th>
+                    <th>Pro</th>
+                    <th>Premium</th>
+                    <tr>
+                        <td>RS. 60,000/-</td>
+                        <td>Rs. 1,00,000</td>
+                        <td>Rs. 3,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>300 SoftCopies</td>
+                        <td>400 SoftCopies</td>
+                        <td>Unlimited SoftCopies</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional Video (5 Min)</td>
+                        <td>Cinematic Video (12 Min)</td>
+                        <td>Cinematic Video (20 Min)</td>
+                    </tr>
+                    <tr>
+                        <td>BASIC ALBUM</td>
+                        <td>PHOTOBOOK ALBUM</td>
+                        <td>BIG GRAND ALBUM</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+          </div>
+    <!-- Pricing section -->
+    <div style="padding: 0 15px 0 15px;background-color:#ddd ;"><hr style="margin: 0px;"></div>
+    <!-- Team Section -->
+    <div id="Team">
+    <h1>Meet the TEAM</h1>
+    <div class="team-container">
+        <div class="team-member">
+            <div class="inner-Frame">
+            <img src="Prj_Images\Screenshot 2024-06-21 120641.png" alt="Shweta">
+            <p>Shweta</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="inner-Frame">
+            <img src="Prj_Images\Screenshot 2024-06-21 120557.png" alt="Vikrant">
+            <p>Vikrant</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="inner-Frame">
+            <img src="Prj_Images\Screenshot 2024-06-21 120504.png" alt="Sameul">
+            <p>Sameul</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Team Section -->
+    <div style="padding: 0 15px 0 15px;background-color:#ddd ;"><hr style="margin: 0px;"></div>
+    <!-- About Us Section -->
+    <div id="About">
+      <div class="About-container">
+        <div class="about-text-section">
+            <h1>About Ron's Photography</h1>
+            <p>Hiii, Myself Ron owner Of <span id="highlight">Ron’s Photography </span>working since 2017 have covered 50
+                wedding based out in Mumbai.We are a crew of Professional Photographer &
+                Cinematographers who loves freezing the warm and precious moments into frames so
+                that when you revisit them, you feel like re-living them.We have a unique approach
+                towards capturing the moments, We love to speak about our passion and answer all
+                your queries and clear your doubts. And the best part about us is that we do all our
+                works according to customer satisfaction and budget.</p>
+            <h4 id="highlight">Thank you!!</h4>
+        </div>
+        <div class="about-image-section">
+            <img src="Prj_Images\Screenshot 2024-06-21 130020.png" alt="RON Photography">
+        </div>
+      </div> 
+    </div>
+     <!-- About Us Section -->
+     <div style="padding: 0 15px 0 15px;background-color:#ddd ;"><hr style="margin: 0px;"></div>
+    <!-- Contact Us Section -->
+    <div id="Contact">
+    <div class="container">
+        <div class="text-section">
+            <h1>Contact</h1>
+            <p>We are a set of passionate people who love just one thing - Photography, and this is the precise reason why our pictures and films come out so nice. So, if you want to preserve those priceless moments and want nothing but the best, then drop in your enquiry below. If you do not like filling forms, then you can call us any time 24x7. We are literally available round-the-clock! We will not only help you with your requirements but also send our best artistic photographers as per your budget and style.</p>
+            <p class="address">Address: RON's Photography, Near Shiv Mandir, Gograswadi, Dombivli East, MUMBAI</p>
+        </div>
+        <div class="image-section">
+            <img src="Prj_Images\Screenshot 2024-06-20 130500.png" alt="RON Photography Logo">
+        </div>
+        <!-- <img src="file-wbLtb7EZcx4I0aEuen6F2eot" alt="Footer Image" class="footer-image"> -->
+    </div>
+</div>
+    <!-- Contact Us Section -->
+    <div style="padding: 0 15px 0 15px;background-color:#ddd ;"><hr style="margin: 0px;"></div>
+    <!-- Enquery Section -->
+    <div class="container-wrapper">
+    <div id="container">
+        <h1>Enquiry</h1>
+        <form action="submit_enquiry.php" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+            <label for="email">Your E-Mail ID</label>
+            <input type="email" id="email" name="email" placeholder="someemail@email.com" required>
+
+            <label for="mobile">Your Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="10 digits" required>
+
+            <label for="city">Your Resident City</label>
+            <input type="text" id="city" name="city" placeholder="eg.Mumbai">
+
+            <label for="location">Your Shoot Location</label>
+            <input type="text" id="location" name="location" placeholder="eg.Rajasthan" required>
+
+            <label for="purpose">Booking Purpose</label>
+            <textarea id="purpose" name="purpose" placeholder="eg.Prewedding and Wedding" required></textarea>
+<br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+    <!-- Enquery Section -->
+    <div style="padding: 0 15px 0 15px;background-color:#ddd ;"><hr style="margin: 0px;"></div>
+    <!-- What our Customer Says Section -->
+    <div id="Customer-says">
+        <div class="testimonial-section">
+            <h1>What Our Customer Say</h1>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="Prj_Images\man.png" alt="Customer Photo">
+                    <p>Giving our Wedding Photography to RON's photography was the best decision. 
+                        Because the photos are so good and also cinematic video of our weddings. 
+                        The collection of photographs is simply breathtaking, and the quality of the prints I ordered was outstanding.
+                         I highly recommend this website to anyone who appreciates beautiful photography. Thanks RON's Photography.
+                    </p>
+                    <p class="name">Sagar Sawant - Konkan</p>    
+                </div>
+                <div class="Vertical-line"></div>
+                <div class="testimonial">
+                    <img src="Prj_Images\woman.png" alt="Customer Photo">
+                    <p>I recently hired a photographer for my wedding through this website, and I couldn't have made a better choice. 
+                        The website's platform allowed me to browse through numerous talented photographers. 
+                        The booking process was straightforward and secure, and the photographer I chose was professional, 
+                        friendly and captured the most beautiful moments of our special day.
+                    </p>
+                    <p class="name">Niharika Pant - Banaras</p>
+                </div>
+                <div class="Vertical-line"></div>
+                <div class="testimonial">
+                    <img src="Prj_Images\profile.png" alt="Customer Photo">
+                    <p>Stunning photography collection! Love browsing through the beautiful images.
+                         Ordered a print and it arrived in perfect condition. The quality is exceptional. 
+                         Found exactly what I was looking for. Fantastic customer service and quick response. 
+                         The team was very helpful and resolved my query promptly. 
+                         A+ experience. I want to thank RON's photography for capturing our sweet and special moments.
+                    </p>
+                    <p class="name">Sandeep Vishwakarma - Mumbai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- What our Customer Says Section -->
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

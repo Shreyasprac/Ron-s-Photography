@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* navbar horizontal flex */
+#nav {
+    background-color: #212529;
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* height: 50px; */
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    z-index: 1000; /* Ensures the navbar is above other content */
+}
+.nav_a{
+    color: #8E2E5D;
+    text-decoration: none;
+}
+
+#nav1{
+    display: flex;
+    /* flex-direction: ; */
+    padding: 12px 42% 10px 10px;
+}
+#nav_text{
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+}
+
+/* Navbar Login Button */
+#nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #212529;  ;
+    margin: 0;
+    padding: 8px 5px;
+}
+
+.login-button {
+    background-color: transparent; /* Green background  #1DB954*/
+    color: #1DB954; /* White text */
+    border: 2px solid #1DB954;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.login-button .lock-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.login-button:hover {
+    background-color: #1AA34A; /* Darker green on hover */
+}
+
+.login-button:active {
+    background-color: #178D40; /* Even darker green on click */
+}

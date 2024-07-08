@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./gallary.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+     $("#S_nav").load("./navbar.html", function(response, status, xhr) {
+         if (status == "error") {
+             console.error("Error loading navbar.html: " + xhr.status + " " + xhr.statusText);
+         }
+     });
+    });
+     </script>
+</head>
+<body>
+    <section id="header">
+        <div id="S_nav"> </div>
+    </section>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <button class="filter-btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="filter-btn" onclick="filterSelection('pre-wedding')">Pre-Wedding</button>
+            <button class="filter-btn" onclick="filterSelection('wedding')">Wedding</button>
+            <button class="filter-btn" onclick="filterSelection('babyshoot')">Babyshoot</button>
+            <button class="filter-btn" onclick="filterSelection('portfolio')">Portfolio</button>
+        </nav>
+    </header>
+    <section class="gallery">
+        <div class="gallery-item pre-wedding"><img src="Prj_Images\Screenshot 2024-06-20 130514.png" alt="Pre-Wedding"></div>
+        <div class="gallery-item pre-wedding"><img src="Prj_Images\Screenshot 2024-06-20 130522.png" alt="Pre-Wedding"></div>
+        <div class="gallery-item pre-wedding"><img src="Prj_Images\Screenshot 2024-06-20 130528.png" alt="Pre-Wedding"></div>
+        <div class="gallery-item wedding"><img src="Prj_Images\Screenshot 2024-06-20 130550.png" alt="Wedding"></div>
+        <div class="gallery-item wedding"><img src="Prj_Images\Screenshot 2024-06-20 130545.png" alt="Wedding"></div>
+        <div class="gallery-item wedding"><img src="Prj_Images\Screenshot 2024-06-20 130538.png" alt="Wedding"></div>
+        <div class="gallery-item babyshoot"><img src="Prj_Images\Screenshot 2024-06-20 130559.png" alt="Babyshoot"></div>
+        <div class="gallery-item portfolio"><img src="Prj_Images\IMG-20240607-WA0021.jpg" alt="Portfolio"></div>
+        <div class="gallery-item portfolio"><img src="Prj_Images\Screenshot 2024-06-20 113238.png" alt="Portfolio"></div>
+    </section>
+
+    <script src="./gallary.js"></script>
+</body>
+</html>
